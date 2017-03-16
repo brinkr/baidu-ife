@@ -1,0 +1,35 @@
+	*{font-family:"microsoft yahei" "arial";}
+			body{margin: auto; background-color:#DEDEDE;min-width: 650px;}
+			nav{background-color: #333333;height: 60px; width: 100%;position: relative;}
+			nav ul{margin: 0; padding-right:30px; position: absolute; 
+			
+			list-style-position: inside; right: 0; top: 50%; margin-top: -0.6em; font-size: 12px;}
+			nav ul li{float: left; padding-left: 35px;}
+        	nav ul li a{color: #fff; text-decoration: none;}
+        	nav a:visited{color: white}
+			article{background-color: white;margin:20px; padding: 20px;box-shadow: 2px 2px 2px #aaa;}
+			h2{font:26px; line-height: 50px;}
+			h3{font: 18px normal; line-height: 30px;}
+			section span{font-size: 12px; line-height: 30px;}
+			article p{text-indent: 2em;font-size: 16px; line-height: 26px;}
+			figure{border: solid gainsboro 1px; width: 100px; height: 100px; 
+			margin-top: 20px; text-align: center; padding-top: 10px;
+				display: inline-block;
+			}
+			table{ border-collapse: collapse; width: 100%; border-width: 1px;}
+			thead{background-color: black;color: white;}
+			table td{padding:3px 10px; font-size: 14px;}
+			tfoot{background-color: gainsboro;font-weight: bold;}
+			footer{background-color: black;color: white;
+			text-align: center; height: 50px; padding-top: 15px; width: 100%;}
+			.tip{margin-left: 35%; font-size: 14px; color: gray;}
+			.title{width: 35%; text-align: right; display: inline-block; vertical-align: top;}
+			aside div{margin: 5px 0px;}
+			aside input{outline: none;}
+			textarea{width: 50%;height: 100px;}
+			input[type="submit"]{width: 88%;background: rgb(28, 99, 221); line-height: 3em; border-radius: 5px; outline: none;color: white;
+			 	font-size: 18px; font-weight: bold;border: 0;
+			}
+			aside h1{border-left: solid #ccc 3px; font-size: 30px; padding: 10px;}
+			aside{width: 400px; float: right;}
+			main article{ margin-right: 400px;}

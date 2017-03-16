@@ -1,0 +1,129 @@
+*{margin:0;padding: 0;}
+body,input,button{font-size: 12px;font-family: 'Microsoft YaHei';outline: none;border: none;}
+#warp{width:100%;min-width: 1280px;}
+nav{width: 30%;text-align: center;margin-left:40%;display: inline-block;}
+ul{100%}
+header nav li{list-style-type: none;display: inline-block;padding:0 10px; height:60px;line-height: 60px;
+
+}
+header nav li:hover{border-bottom: solid #E53C3C 3px;box-sizing: border-box;}
+header nav li:hover a{color: #E53C3C;}
+header nav a{text-decoration: none;color: #534141;font-size: 14px;}
+header #logo{float: left;margin-top: 6px;margin-left: 5%;
+    background-image: url(../images/icon-1.png); width: 120px;height: 46px;
+    background-size: 30% 70%;background-repeat: no-repeat;background-position: left;
+}
+#logo h1{margin-left: 42px;line-height: 43px;font-size: 26px;font-weight: normal; display: inline-block;}
+header #login{
+    background: url(../images/icon-2.jpg) no-repeat left; display: inline-block;height:57px;
+    color: #E53C3C;font-size: 14px;padding-left: 18px;padding-right:2px;float: right;margin-right: 5%;line-height: 60px;cursor: pointer;
+}
+header #login:hover{border-bottom: solid #E53C3C 3px;}
+#banner{
+    background-image: url(../images/pic01.jpg);width:100%;height: 700px;background-size: 100%;
+}
+#slogan{padding-top: 200px;padding-left: 180px;color:#fff;font-size: 22px;}
+#slogan p:first-child{font-family: Arial;font-size: 60px;margin-bottom: 20px;margin-left: -13px;}
+#slogan input{
+    width: 300px;height: 60px;background-color:#E53C3C;font-size: 24px;color: #fff; line-height: 60px;
+    font-family: 'Microsoft YaHei';border: none;margin-top: 20px;outline: none;cursor: pointer;
+   /* -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;无法阻止页面载入时加载动态效果，放入伪类中，当伪类消失时，效果消失过于生硬*/
+}/*input元素好像没法继承父元素样式*/
+#slogan input:hover{
+    background-color: #E31212;border-radius: 3px;
+ 
+}
+#section1 .cell{width: 24%;display: inline-block;text-align: center;margin-top:50px;margin-bottom: 50px;}
+#section1 .cell p{margin-top: 30px; border-right: solid 2px #534141;color:#534141;font-size: 14px;padding: 0 80px;}
+#section1 .cell p:hover{color:#BE4F48;}
+#section1 .cell:last-child p{border-right: none;}
+#section2{background-color: #EDEAEA;height: 400px;text-align: center;}
+#section2 img{margin-top: 90px;margin-bottom: 60px;}
+#section2 p{color:#534141;font-size: 50px;}
+#section3{background-image: url(../images/pic02.jpg);width: 100%;height: 340px;background-size: 100%;}
+#section3{color:#fff;text-align: center;}
+#section3 p:first-child{font-size: 22px;padding-top: 55px;}
+#section3 p:nth-child(3){margin-bottom: 50px;}
+#section3 hr{width: 3%;margin-left: 48.5%;background-color: #fff;height: 2px;border: none;margin-top: 10px;margin-bottom: 20px;}
+#section3 input[type="text"]{
+    width: 230px;height: 36px;padding-left: 10px; background-image: url(../images/icon-8.png);
+    background-position: 215px;background-repeat: no-repeat;border: none;margin-right: 30px;font-size: 14px;font-family: 'Microsoft YaHei';line-height: 14px;
+}
+/*#section3 input[type="text"]+ul{display: none;}
+#section3 input[type="text"]:focus+ul{display:block;}*/
+#section3 input[type="button"]{width: 230px;height: 36px;background-color: #BE4F48;border: none;
+    color: #fff;font-size: 14px;font-family: 'Microsoft YaHei';line-height: 14px; /*button里没有文字，按父元素的baseline对齐*/
+}                                                                                 /*故同一行input文字大小位置相同，则会对齐*/
+#section4{background-color:#EDEAEA;height: 600px;}
+#section4 .cell{width: 24%;display: inline-block;text-align: center;margin-top: 100px;}
+#section4 .cell h3{font-weight: normal;margin: 10px 0px;}
+#section4 .cell p{color: #7C7C7C;}
+#section5 {position: relative;text-align: center;}
+#section5>div{display: inline-block;float: left;}
+#section5>div:first-child{
+    /*width: 852px;*/width:68%;height: 565px; background-image: url(../images/pic07.jpg);background-size: 100%;
+ margin-left:-1px;/*左边背景图有1px空白，原因未明--update是背景图两边有白条*/ color: #fff;text-align: center;
+}
+#section5 div p{font-size: 20px;line-height: 30px;}
+#section5>div:first-child p:nth-child(1){padding-top: 130px;font-size: 50px;line-height: 50px;}
+#section5>div:first-child p:nth-child(2){padding-top: 0px;font-size: 120px;line-height: 150px;}
+#section5::after {
+    content: '';
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;/*上右下左向内的三角形涂色*/
+    left: calc(68% - 61px);top: 265px;   
+}
+#section5>div:last-child{/*width:calc(100% - 1054px);*/width: 20%;padding:0 6%;position: relative;height: 565px;}/*注意减号前后要有空格，否则无效*/
+/*#section5 #page2{display: none;}#section5 #page3{display: block;}#section5 #page1{display: none;}*/
+#section5>div:last-child h1{font-size: 22px;line-height: 120px;text-align: center;margin-top: 68px;}
+#section5>div:last-child span{color: #BE4F48;}
+#section5>div:last-child p{color: #B3AFAC;font-size: 14px;line-height: 30px;text-align: left;}
+#section5 button{display:inline-block;background-color:#fff ;width: 100px;height: 36px;border: none;color:#BE4F48;border: solid 1px #BE4F48;margin-top: 50px;}
+
+
+#section5>div:last-child label{
+    height: 10px;width: 10px;background-color:#fff;border: solid #969696 1px;
+    display: inline-block;border-radius: 50%;position: absolute;cursor: pointer;bottom: 100px;
+}
+#section5>div:last-child label:nth-child(2){left:44%;}
+#section5>div:last-child label:nth-child(5){left:49%;}
+#section5>div:last-child label:nth-child(8){left:54%;}
+#section5>div:last-child input{display: none;}
+#section5>div:last-child>div{display: none;}
+#section5>div:last-child input:checked+label{background-color:#969696;}
+#section5>div:last-child input:checked+label+div{display: block;}
+#section6>div{display: inline-block; /*width: 425px;*/width: calc(34% - 1px);height: 358px;float: left;text-align: center;padding-top: 160px;font-size: 24px;line-height: 36px;}
+#section6>div:first-child{background-color: #E8504F;color: #fff;/*width: 424px;*/}
+#section6>div:last-child{background-image: url(../images/pic08.jpg);background-size: 100%;/*width: calc(100% - 849px);*/width: calc(32% + 2px);}
+#section6>div hr{display: inline-block; height: 2px;width: 50px;background-color: #fff;border: none;margin-top: -6px;}
+#section6>div:nth-child(2) hr:last-of-type{background-color: #A8A8A8;}
+#section6 button{width: 170px;height: 42px;font-size: 20px;line-height: 20px;margin-top: 20px;}
+#section6>div:first-child button{background-color: #E8504F;border: solid #fff 1px;color: #fff;}
+#section6>div:nth-child(2) button{background-color: #fff;border: solid #E8504F 1px;color:#E8504F;}
+#section7{text-align: center;}
+#section7 h3{font-size: 20px;margin-top: 100px;line-height: 36px;}
+#section7 p{font-size: 14px;color: #B3AFAC;}
+#section7 hr{display: inline-block;width: 38px;height:2px;background-color: #E8504F;border: none;margin-bottom: 10px;}
+#section8{padding-top: 90px;text-align: center;}
+#section8>div>div h3{font-size: 16px;font-weight: normal;margin-bottom: 20px;}
+#section8>div>div p{color: #B3AFAC;}
+#section8>div>div a{text-align: right;text-decoration: none;display: block;color: #B3AFAC;margin-bottom: 12px;}
+#section8>div{width: 26%;display: inline-block;text-align: left;}
+#section8>form{width: 672px;display: inline-block;vertical-align:top;text-align: left;margin-left: 80px;}
+#section8 input[type="text"]{width: 310px;height: 40px;margin-bottom: 14px;margin-right: 14px; background-color: #EDEDEF;border: none;padding-left: 10px;}
+#section8 textarea{width:638px;height: 100px; background-color: #EDEDEF;padding: 10px;border: none;resize: none;margin-bottom: 12px;outline: none;
+                    overflow:auto;/*没有设置overflow，在IE11下，即便文本没有超出，也会显示不可用的滚动条，不美观。*/}
+#section8 input[type="submit"]{width: 658px;background-color: #EDEDEF;border: none;height: 40px;font-size: 14px;}
+#section9{background-color: #33363F;text-align: center;margin-top: 80px;color: #fff;height: 360px;}
+#section9 h3{padding-top: 50px;padding-bottom:10px;font-size: 24px;font-weight: normal;}
+#section9 input{height: 40px;margin-top: 30px;border: none;}/*text表面上看没有border，其实有2px，会占据空间所以才导致不对齐*/
+#section9 input[type="text"]{width: 430px;padding-left: 10px;font-size: 16px;line-height: 16px;}
+#section9 input[type="submit"]{width: 80px;background-color: #555861;font-size: 14px;color: #fff;cursor: pointer;vertical-align: top;/*IE11下还是矮1px，但是修正了高度并向上对齐就好了*/}
+
+#section9 a{color: #fff;font-size: 30px;text-decoration: none;margin:40px 15px;}
+footer{height: 20px;background-color: #2F2F37;color: #fff;padding: 30px 50px 10px;}
+footer a{text-align: right;text-decoration: none;float: right;color: #fff;}
